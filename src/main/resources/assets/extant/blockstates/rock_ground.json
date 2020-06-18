@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": [
+      { "model": "extant:block/rock_ground" }
+    ]
+  }
+}
