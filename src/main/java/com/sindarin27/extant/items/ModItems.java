@@ -12,5 +12,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExtantMod.MOD_ID);
 
     public static final RegistryObject<Item>
-        ROCK = ITEMS.register("stone_rock", () -> new ItemRock(ModBlocks.ROCK_GROUND.get(), new Item.Properties()));
+        ROCK = ITEMS.register("stone_rock", () -> new ItemRock(ModBlocks.ROCK_GROUND.get(), new Item.Properties())),
+        SLINGSHOT = ITEMS.register("slingshot", () -> new ItemSlingshot(new Item.Properties()));
 }

@@ -33,7 +33,7 @@ public class BlockRock extends Block {
     }
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
-        return !worldIn.isAirBlock(pos.down());
+        return worldIn.getBlockState(pos.down()).isSolidSide(worldIn, pos, Direction.UP);
     }
 
     @Override

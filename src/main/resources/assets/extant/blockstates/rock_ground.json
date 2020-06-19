@@ -1,7 +1,10 @@
 {
   "variants": {
     "": [
-      { "model": "extant:block/rock_ground" }
+      { "model": "extant:block/rock_ground" },
+      { "model": "extant:block/rock_ground", "y": 90},
+      { "model": "extant:block/rock_ground", "y": 180},
+      { "model": "extant:block/rock_ground", "y": 270}
     ]
   }
 }

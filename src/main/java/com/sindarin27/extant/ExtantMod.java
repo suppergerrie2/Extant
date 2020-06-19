@@ -3,6 +3,7 @@ package com.sindarin27.extant;
 import com.sindarin27.extant.blocks.ModBlocks;
 import com.sindarin27.extant.entities.ModEntities;
 import com.sindarin27.extant.items.ModItems;
+import com.sindarin27.extant.worldgen.ModFeatures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -19,5 +20,6 @@ public class ExtantMod {
         //Register event subscribers
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModEntities::registerClient);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModBlocks::onClientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModFeatures::FMLLoadComplete);
     }
 }
